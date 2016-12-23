@@ -93,11 +93,13 @@ LIGHTS = 'lights'
 HIERARCHY = 'hierarchy'
 FACE_MATERIALS = 'faceMaterials'
 SKINNING = 'skinning'
-COPY_TEXTURES = 'copyTextures'
+EXPORT_TEXTURES = 'exportTextures'
+EMBED_TEXTURES = 'embedTextures'
 TEXTURE_FOLDER = 'textureFolder'
 ENABLE_PRECISION = 'enablePrecision'
 PRECISION = 'precision'
 DEFAULT_PRECISION = 6
+CUSTOM_PROPERTIES = 'customProperties'
 EMBED_GEOMETRY = 'embedGeometry'
 EMBED_ANIMATION = 'embedAnimation'
 OFF = 'off'
@@ -153,11 +155,13 @@ EXPORT_OPTIONS = {
     CAMERAS: False,
     LIGHTS: False,
     HIERARCHY: False,
-    COPY_TEXTURES: True,
+    EXPORT_TEXTURES: True,
+    EMBED_TEXTURES: False,
     TEXTURE_FOLDER: '',
     LOGGING: DEBUG,
     ENABLE_PRECISION: True,
     PRECISION: DEFAULT_PRECISION,
+    CUSTOM_PROPERTIES: False,
     EMBED_GEOMETRY: True,
     EMBED_ANIMATION: True,
     GEOMETRY_TYPE: GEOMETRY,
@@ -200,7 +204,10 @@ AMBIENT_LIGHT = 'AmbientLight'
 DIRECTIONAL_LIGHT = 'DirectionalLight'
 POINT_LIGHT = 'PointLight'
 SPOT_LIGHT = 'SpotLight'
+# TODO (abelnation): confirm this is correct area light string for exporter
+RECT_AREA_LIGHT = 'RectAreaLight'
 HEMISPHERE_LIGHT = 'HemisphereLight'
+# TODO: RectAreaLight support
 MESH = 'Mesh'
 EMPTY = 'Empty'
 SPRITE = 'Sprite'
@@ -220,6 +227,7 @@ ROTATION = 'rotation'
 SCALE = 'scale'
 
 UV = 'uv'
+UV2 = 'uv2'
 ATTRIBUTES = 'attributes'
 NORMAL = 'normal'
 ITEM_SIZE = 'itemSize'
@@ -272,7 +280,6 @@ SCL = 'scl'
 TIME = 'time'
 KEYS = 'keys'
 
-AMBIENT = 'ambient'
 COLOR = 'color'
 EMISSIVE = 'emissive'
 SPECULAR = 'specular'
@@ -339,6 +346,7 @@ INTENSITY = 'intensity'
 DISTANCE = 'distance'
 ASPECT = 'aspect'
 ANGLE = 'angle'
+DECAY = 'decayExponent'
 
 FOV = 'fov'
 ASPECT = 'aspect'
@@ -352,7 +360,6 @@ BOTTOM = 'bottom'
 
 SHADING = 'shading'
 COLOR_DIFFUSE = 'colorDiffuse'
-COLOR_AMBIENT = 'colorAmbient'
 COLOR_EMISSIVE = 'colorEmissive'
 COLOR_SPECULAR = 'colorSpecular'
 DBG_NAME = 'DbgName'
